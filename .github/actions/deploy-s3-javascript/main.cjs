@@ -14,7 +14,7 @@ function run() {
     
     // 3) Get the bucket static website address automatically
     const websiteUrl = `http://${bucket}.s3-website-${bucketRegion}.amazonaws.com`;
-    core.setOutput('website-url', websiteUrl) //the equivalent to setting an output in GitHub
+    core.setOutput('s3-url', websiteUrl) //the equivalent to setting an output in GitHub
 }
 
 run();

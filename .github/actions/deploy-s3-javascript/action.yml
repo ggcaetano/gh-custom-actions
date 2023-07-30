@@ -11,6 +11,9 @@ inputs:
   dist-folder:
     description: 'Folder containing the deployable files.'
     required: true
+outputs:
+  s3-url:
+  description: 'Address of the static website s3 bucket'
 runs:
   using: 'node16'
   main: 'main.cjs'
